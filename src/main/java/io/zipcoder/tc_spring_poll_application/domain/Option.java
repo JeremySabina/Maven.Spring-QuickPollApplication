@@ -13,6 +13,14 @@ public class Option {
     @Column(name = "OPTION_VALUE")
     String value;
 
+    public Option() {
+    }
+
+    public Option(Long id, String value) {
+        this.id = id;
+        this.value = value;
+    }
+
     public Long getId() {
         return id;
     }
